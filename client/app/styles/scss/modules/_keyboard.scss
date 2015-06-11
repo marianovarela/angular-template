@@ -1,0 +1,136 @@
+.keyboard-dialog{
+  height: 800px;
+  .modal-dialog{
+    width :80%;
+    min-width: 800px;
+    .modal-content{
+      box-shadow:none;
+      border:none;
+      background-color: transparent;
+      .modal-body{
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 20px;
+        .main-frame{
+          width: 860px;
+          margin-left:76px;
+          height: 500px;
+          .imput-frame{
+            margin: 8px;
+            width: 780px;
+            height: 70px;
+            border: 3px solid white;
+            .input{
+              float: left;
+              width: auto;
+              height: 70px;
+              font-family: 'Oswald';
+              font-weight: 300;
+              font-size: 36px;
+              text-indent: 10px;
+              color: white;
+              border: none;
+              line-height: 70px;
+            }
+            .cursor{
+              float: left;
+              display:block;
+              margin-top: 10px;
+              margin-left: 3px;
+              width: 5px;
+              height: 50px;
+              background-color: white;
+              @include cursor-blink;
+            }
+          }
+          .letters-frame,
+          .actions-frame{
+            .button{
+              text-decoration: none;
+              font-family: 'Oswald';
+              font-weight: 300;
+              color: white;
+              width: 64px;
+              height: 64px;
+              margin: 8px;
+              border-radius: 10px;
+              border: 3px solid white;
+              float: left;
+              font-size: 36px;
+              line-height: 60px;
+              text-align: center;
+              .alphabetic{
+                line-height: 54px;
+              }
+              &.shift,
+              &.simbols{
+                width: 98px;
+              }
+              &.delete{
+                width: 138px;
+                line-height: 54px;
+              }
+              &.space{
+                width: 403px;
+                line-height: 54px;
+              }
+              &.hover,
+              &:hover{
+                background-color: white;
+                color: #55F;
+              }
+            }
+          }
+        }
+      }
+      .modal-footer{
+        border-top: 0;
+        .modal-controls{
+          .modal-resume,
+          .modal-close{
+            float: right;
+            display: block;
+            height: 60px;
+            width: 200px;
+            margin-left: 10px;
+            color: white;
+            font-size: 30px;
+            line-height: 60px;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Oswald';
+            border-radius: 20px;
+            font-weight: 300;
+          }
+          .modal-resume{
+            background-color: #5D222A;
+            &.hover,
+            &:hover{
+              background-color: #85303D;
+              @include simple-shake2;
+            }
+          }
+          .modal-close{
+            background-color: #2F2857;
+            &.hover,
+            &:hover{
+              background-color: #483D85;
+              @include simple-shake2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// .keyboard-dialog .modal-dialog:after {
+  // content : "";
+  // display: block;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // background-image: url('../../assets/images/ui/background/keyboard.png'); 
+  // width: 100%;
+  // height: 100%;
+  // opacity : .8;
+  // z-index: -1;
+// }

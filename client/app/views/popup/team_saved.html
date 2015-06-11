@@ -1,0 +1,22 @@
+<div id="tabla2" class="contenedor"
+ng-controller="navigable.vertical"
+identifier="main"
+priority="0"
+>   
+    
+  <div class="modal-favorite-team">Se ha guardado tu equipo favorito {{team}}</div>
+
+  <div>
+    <input id="aceptar" 
+      class="botonAC button-profile" 
+      type="button" value="Aceptar" 
+      name="Aceptar" 
+      ng-enter="confirm()" 
+      ng-click="confirm()" 
+      navigable-leaf="0"
+      navigable-leaf-active="true"
+      navigable-leaf-id="enter-input"
+      navigable-leaf-class="hover"/>
+  </div>
+  
+</div>

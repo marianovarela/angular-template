@@ -1,0 +1,43 @@
+@-webkit-keyframes expand {
+  0%   { -webkit-transform:     scale(1, 1) }
+  10%  { -webkit-transform:     scale(1.05, 1.05)}
+  20%  { -webkit-transform:     scale(1.075, 1.075) }
+  90%  { -webkit-transform:     scale(1.05, 1.05)}
+  100% { -webkit-transform:     scale(1, 1)}
+  }
+  
+@-moz-keyframes expand {
+  0%   { -moz-transform:     scale(1, 1) }
+  10%  { -moz-transform:     scale(1.05, 1.05)}
+  20%  { -moz-transform:     scale(1.075, 1.075) }
+  90%  { -moz-transform:     scale(1.05, 1.05)}
+  100% { -moz-transform:     scale(1, 1)}
+  }
+  
+@mixin simple-expand{
+  -moz-animation: expand 0.2s 1;
+  -webkit-animation: expand  0.2s 1;
+  animation: expand  0.2s 1;
+}  
+
+.button-profile.hover{
+  @include simple-expand;
+  background-color: #444;
+}
+
+.btn-top.hover{
+  @include simple-expand;
+  background-color: #444;
+}
+
+.btn-result.hover{
+  -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.table-td-win-local.hover,
+.table-td-equals.hover,
+.table-td-win-visitor.hover{
+  background-color: #FFF;
+}
+

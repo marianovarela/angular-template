@@ -1,0 +1,38 @@
+#-------------------------------#
+#             global            #
+#-------------------------------#
+
+$ sudo apt-get install npm
+$ sudo apt-get install ruby-full
+$ sudo apt-get install rubygems1.8
+
+$ sudo npm install -g grunt-cli
+$ sudo npm install -g bower
+
+$ sudo gem install compass
+
+#-------------------------------#
+#       over root project       #
+#-------------------------------#
+
+$ npm install
+
+$ bower update
+
+# adding nested projects
+# over client directory (cd client/)
+$ ln -s /path_to_common_repository/ common
+
+#-------------------------------#
+#             deploy            #
+#-------------------------------#
+
+$ grunt
+
+#-------------------------------#
+#             build             #
+#-------------------------------#
+
+$ grunt build
+
+
