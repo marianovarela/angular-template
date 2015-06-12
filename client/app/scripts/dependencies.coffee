@@ -23,6 +23,8 @@ angular.module('app', [
   'view.splash.controller.module'
   
   'background.service.module'
+  'feed.service.module'
+  'resource.service.module'
 
   'view.popup.alert.controller.module'
 
