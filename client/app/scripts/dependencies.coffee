@@ -8,18 +8,17 @@ angular.module('app', [
   'ui.bootstrap'
   
   'view.main.controller.module'
-    
-  'promise.handler.module'
-  'generic.repository.module'
-  'generic.service.module'  
-  'cache.service.module'
-  'empty.object.module'
-  'attribute.loader.module'
-  'authentication.module'
-  'session.module'
-  'user.module'
   
-  #GAME    
+  #'promise.handler.module'
+  #'generic.repository.module'
+  #'generic.service.module'  
+  #'cache.service.module'
+  #'empty.object.module'
+  #'attribute.loader.module'
+  #'authentication.module'
+  #'session.module'
+  #'user.module'
+     
   'view.splash.controller.module'
   
   'background.service.module'
