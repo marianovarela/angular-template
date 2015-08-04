@@ -8,11 +8,11 @@ var conficuration = {
 };
 
 var options = {
-  target:    'https://api.twitter.com',
+  target:    'https://graph.facebook.com',
   agent  :   https.globalAgent,
   headers: {
     Origin: 'http://127.0.0.1',
-    host:   'api.twitter.com'
+    host:   'graph.facebook.com'
   }
 };
 
